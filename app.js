@@ -8,7 +8,7 @@ import TuitsController from "./controllers/tuits/tuits-controller.js";
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
     || 'mongodb://127.0.0.1:27017/tuiter';
-mongoose.connect(CONNECTION_STRING);
+mongoose.connect("mongodb+srv://alischueler:FineLine1@cluster0.kqw6k06.mongodb.net/?retryWrites=true&w=majority");
 const app = express();
 app.use(cors());
 app.use(express.json());
